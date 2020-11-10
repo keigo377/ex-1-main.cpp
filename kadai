@@ -1,0 +1,35 @@
+#include <iostream>
+
+#define CPP2_PRIME_UPPER_LIMIT 1000000 //探索する値の上限値。
+
+yakusuu=0;
+for(j=1;j<=i;j++)
+{
+	if(i%j==0) yakusuu++;
+}
+
+
+int nth_prime(List *ls, int n, bool *err)
+{
+
+}
+
+int main(void)
+{
+	int i,j,yakusuu;
+
+	for(i=1;i<=10000;i++)
+	{
+		yakusuu=0;
+		for(j=1;j<=i;j++)
+		{
+			if(i%j==0) yakusuu++;
+		}
+
+		if(yakusuu==2) printf("%d ",i);
+	}
+
+	printf("\n");
+
+	return 0;
+}
